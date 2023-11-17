@@ -3,11 +3,9 @@
 #include <stdarg.h>
 #include <stdio.h>
 #include <unistd.h>
-#include <string.h>
 
 #define UNUSED(x) (void)(x)
 #define BUFF_SIZE 1024
-#define BUFFER_SIZE 100
 
 /**
  * The Flags used for formatting
@@ -49,12 +47,12 @@ int _printf(const char *format, ...);
 int handle_print(const char *fmt, int *i,
 va_list list, char buffer[], int flags, int width, int precision, int size);
 
-/** 
+/**
  * Funtions for printing chars and strings
  **/
 
 /**
- *Functions for printing numbers 
+ *Functions for printing numbers
  **/
 int print_int(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
@@ -72,14 +70,14 @@ int print_hexa_upper(va_list types, char buffer[],
 int print_hexa(va_list types, char map_for[],
 char buffer[], int flags, char flag_ch, int width, int precision, int size);
 
-/** 
+/**
  * Function for printing non printable characters
  **/
 int print_non_printable(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
 
 /**
- * Funcion for print memory address 
+ * Funcion for print memory address
  **/
 int print_pointer(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
@@ -104,7 +102,7 @@ int print_reverse(va_list types, char buffer[],
 int print_rot13string(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
 
-/** 
+/**
  * For width handling
  **/
 int handle_write_char(char c, char buffer[],
@@ -121,7 +119,7 @@ char buffer[],
 	int flags, int width, int precision, int size);
 
 /**
- * UTILS 
+ *UTILS
  **/
 int is_printable(char);
 int append_hexa_code(char, char[], int);
