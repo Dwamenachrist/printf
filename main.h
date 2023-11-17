@@ -3,9 +3,11 @@
 #include <stdarg.h>
 #include <stdio.h>
 #include <unistd.h>
+#include <string.h>
 
 #define UNUSED(x) (void)(x)
 #define BUFF_SIZE 1024
+#define BUFFER_SIZE 100
 
 /**
  * The Flags used for formatting
