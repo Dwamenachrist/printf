@@ -55,16 +55,3 @@ int _printf(const char *format, ...)
         va_end(args);
         return (n);
 }
-/**
- * main - print
- *
- * Return: Always 0.
- */
-int main(void)
-{
-        char test = 'v';
-
-        _printf("Hello %s! The answer is %c%%\n", "world", test);
-        return (0);
-}
-
